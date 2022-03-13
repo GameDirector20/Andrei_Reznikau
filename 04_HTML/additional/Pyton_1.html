@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <META charset="UTF-8">
+        <TITLE>Программа на Python (Часть 1)</TITLE>
+    </HEAD>
+    <BODY>
+        <PRE><IMG SRC="media/Icon-Python.png" align="right" alt="Здесь должна быть эмблема Pyton" title="Это Pyton"></PRE>
+        <H1>HOW-TO: Программа на Python, Часть 1</H1>
+        <ul>
+            <li><EM><a href="#">Программа на Python — часть 1</a></EM></li>
+            <li><EM><a href="Pyton_2.html">Программа на Python — часть 2</a></EM></li>
+            <li><EM><a href="Pyton_3.html">Программа на Python — часть 3</a></EM></li>
+        </ul>
+        <H2 id="Content">Содержание</H2>
+        <H3>HOW-TO: Программа на Python, Часть 1</H3>
+        <ul>
+            <li><a href="#FirstPro">Наша первая программа</a></li>
+            <li><a href="#CycleEx">Пример цикла For</a></li>
+        </ul>
+        <!--Длинны тире получилось поставить без литералов-->
+        <P>Из множества существующих языков программирования Python — один из самых лёгких в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей — программирование графических интерфейсов (<ABBR><INS>GUI</INS></ABBR>). Давайте создадим простую программу прямо сейчас.</P>
+        <H2 id="FirstPro">Наша первая программа</H2>
+        <P>Наберём код в текстовом редакторе (например, в <STRONG>gedit</STRONG>). Потом мы разберёмся, что делает каждая строка и пойдём дальше.</P>
+        <P>Введите эти 4 строки:</P>
+        <!--В связи с тем, что в абзаце с кодом не получилось уйти от слишком больших межстрочных интервалов, было решено использовать таблицу-->
+        <table>
+            <tr><th align="left"><code>#!/usr/bin/env python</code></th></tr>
+            <tr><th align="left"><code>print 'Hello. I am a python program.'</code></th></tr>
+            <tr><th align="left"><code>name = raw_input("What is your name?")</code></th></tr>
+            <tr><th align="left"><code>print "Hello there, " + name + "!"</code></th></tr>
+        </table>
+        <P>Это всё. Сохраните файл как <STRONG>hello.py</STRONG> в любом месте. Я предлагаю сохранить его в папке <STRONG>python_examples</STRONG> в домашнем каталоге. Этот пример показывает, как просто написать программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</P>
+        <P><CODE><INS><EM><STRONG>chmod +x hello.py</STRONG></EM></INS></CODE></P>
+        <P>в папке, в которой вы сохранили программу. Теперь запустите её.</P>
+        <!--Аналогично предыдущей таблице. Использован тег samp, т.к. по смыслу текста это результат вывода компьютерной программы-->
+        <table>
+            <tr><th align="left"><samp>greg@earth:~/python_examples$ ./hello.py</samp></th></tr>
+            <tr><th align="left"><samp>Hello. I am a python program.</samp></th></tr>
+            <tr><th align="left"><samp>What is your name? Ferd Burphel</samp></th></tr>
+            <tr><th align="left"><samp>Hello there, Ferd Burphel!</samp></th></tr>
+            <tr><th align="left"><samp>greg@earth:~/python_examples$</samp></th></tr>
+        </table>
+        <P>Вот и всё.</P>
+        <H2 id="CycleEx">Пример цикла For</H2>
+        <p><a href="#Content">К содержанию</a></p>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и наберите следующую программу:</p>
+        <table>
+            <tr><th align="left"><code>#!/usr/bin/env python</code></th></tr>
+            <tr><th align="left"><code>for cntr in range(0,10):</code></th></tr>
+            <tr><th><code>print cntr</code></th></tr>
+        </table>
+        <!--Специальные символы получилось поставить без литералов-->
+        <p><EM>Не забудьте поставить символ табуляции перед строкой «print cntr».</EM> Это важно. В Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.</p>
+            <table width="100%" align="center">
+                <tr>
+                    <td align="left"><a href="#"><img src="Media/Prev_svg.svg" title="Переход в начало страницы" alt="Ha Home"></a></td>
+                    <!--Правильно ли вставлять ссылку на файл svg через тег IMG? Есть ли еще какой-нибудь вариант по-другому вставить файл SVG?-->
+                    <td align="center"><a href="#Content"><img src="Media/Home_svg.svg" type="image/svg+xml" title="Переход в начало страницы" alt="Ha Home"></a></td>
+                    <td align="right"><a href="Pyton_2.html"><img src="Media/Next_svg.svg" type="image/svg+xml" title="Переход на страницу Pyton часть 2" alt="Ha Pyton 2"></a></td>
+                </tr>
+            </table>
+
+           
+    </BODY>
+</HTML>
