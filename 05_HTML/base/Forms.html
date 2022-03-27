@@ -157,10 +157,10 @@
                     <form name="Val" id="Val" method="get" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Строка поиска</legend>
-                            <input type="text" name="Val_input" id="Val_input" placeholder="Только русские буквы" pattern="[А-Яа-я]+">
+                            <input type="text" name="Val_input" id="Val_input" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]+">
                             <br>
                             <i>Телефонный номер в формате +ХХХ-ХХ-ХХХХХХХ, где Х - любое числа</i>
-                            <input type="tel" name="Val_tel" id="Val_tel" pattern="^((8|\+375)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"><br>
+                            <input type="tel" name="Val_tel" id="Val_tel" pattern="(\+375|80)-\d{2}-\d{7}"><br>
                             <input type="submit" name="Val_btn">
                         </fieldset>
                     </form>
