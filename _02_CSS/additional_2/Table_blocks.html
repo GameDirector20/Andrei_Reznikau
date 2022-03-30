@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <title>Таблица с блоками</title>
+        <style>
+            div{
+                background-color: rgb(230, 230, 230); border-color: white; border-style: solid; border-width: 1px; border-collapse: collapse;
+            }
+            .flex1{
+                display: flex; flex-direction: column; flex-wrap: wrap; align-content: center; justify-content: space-around;
+            }
+            .flex2{
+                display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start;
+            }
+            .flex3{
+                display: flex; flex-direction: column; flex-wrap: wrap; align-content: center; justify-content: space-around;
+            }
+            footer{
+                /*clear: both;*/ display: flex; width: auto; height: fit-content; background-color: rgb(185, 185, 185);
+            }
+            .navigation{
+                width: 15em; background-color: darkgray; align-self: flex-start; /*float: left;*/ 
+            }
+            .article{
+               background-color: rgb(196, 196, 196); margin-bottom: 2px;
+            }
+            .common{
+                /*float: right;*/ width: calc(100% - 15em)
+            }
+        </style>
+    </HEAD>
+    <body>
+        <div class="flex1">
+            <div class="flex2">
+                <div class="navigation">
+                    <strong>Navigation block</strong><br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni beatae sint voluptatibus ducimus ipsum id distinctio ratione quos tempore dignissimos fugiat, ullam velit optio ipsam eius doloremque officiis enim. Rerum.
+                </div>
+                <div class="common flex3">
+                    <div class="article">
+                        <strong>Article 1</strong><br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure quam sit dolores corrupti quisquam quaerat autem enim qui assumenda cupiditate, voluptatem modi repellendus tempore eius fugit, ex provident exercitationem!
+                    </div>
+                    <div class="article">
+                        <strong>Article 2</strong><br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cupiditate alias, eaque in officia assumenda odio ipsa. Consequuntur dolorem, consectetur earum nesciunt voluptatem neque pariatur est corporis odit dolore ullam!
+                        <img src="icon_mail.png" align="right">
+                        <br>
+                        <br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse eos odit nulla ducimus nam! Voluptates tenetur iusto sint! Possimus, illum dolorum? Quisquam corrupti, neque itaque dolor quam pariatur blanditiis?
+            </footer>
+        </div>
+    </body>
+</HTML>

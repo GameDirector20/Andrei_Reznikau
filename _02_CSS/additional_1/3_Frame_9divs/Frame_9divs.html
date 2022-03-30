@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<HTML>
+    <meta charset="UTF-8">
+    <title>Рамка серо-желтая (блоками)</title>
+    <style>
+        div{
+            border-color: black;
+            border-width: 0px;
+            border-style: solid;
+            min-width: 3rem;
+            min-height: 3em;
+            text-align: center;
+        }
+        H1{
+            text-align: center;
+        }
+        /*Во всех классах оставил "- 4рх", т.к. экспериментировал с выстраиванием div-элементов и ставил ширину границы каждого 2рх*/
+        .t-l{
+            width: calc(100%/3 - 4px);
+            float: left;
+            clear: both;
+            background-image: url(Media/t-l.gif);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .t-c{
+            width: calc(100%/3 - 4px);
+            float: left;
+            background-image: url(Media/t.gif);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+        .t-r{
+            width: calc(100%/3 - 4px);
+            float: left;
+            background-image: url(Media/t-r.gif);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+        }
+        .m-l{
+            width: calc(100%/3 - 4px);
+            float: left;
+            clear: both;
+            background-image: url(Media/l.gif);
+            background-repeat: repeat-y;
+            background-position: right;
+            height: 10em;
+        }
+        .m-c{
+            width: calc(100%/3 - 4px);
+            float: left;
+            height: 10em;
+            overflow-y: scroll;
+        }
+        /*В связи с тем, что центральный блок растягивается с увеличением текста, а боковые блоки - нет,
+        решил добавить overflow - sccroll, не уверен, что это правильно*/
+        .m-r{
+            width: calc(100%/3 - 4px);
+            float: left;
+            background-image: url(Media/r.gif);
+            background-repeat: repeat-y;
+            background-position: left;
+            height: 10em;
+        }
+        .b-l{
+            width: calc(100%/3 - 4px);
+            float: left;
+            clear: both;
+            background-image: url(Media/b-l.gif);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        .b-c{
+            width: calc(100%/3 - 4px);
+            float: left;
+            background-image: url(Media/b.gif);
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+        .b-r{
+            width: calc(100%/3 - 4px);
+            float: left;
+            background-image: url(Media/b-r.gif);
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+    </style>
+    <body>
+        <H1>Рамка из 9 блочных элементов</H1><br>
+        <div class="t-l"></div>
+        <div class="t-c"></div>
+        <div class="t-r"></div>
+        <div class="m-l"></div>
+        <div class="m-c">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, cupiditate assumenda tempore doloremque consequatur aliquid esse hic ipsa alias iure aut explicabo. Voluptates minima optio recusandae, vel saepe rerum nisi?<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus harum ut est, voluptates impedit minima officia amet voluptas adipisci quisquam debitis corporis vero error et repudiandae exercitationem iste dignissimos.<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, ut, quia sequi voluptates temporibus porro nesciunt numquam cumque nihil iure qui, sunt hic quam ad officia dignissimos culpa itaque ullam?
+        </div>
+        <div class="m-r"></div>
+        <div class="b-l"></div>
+        <div class="b-c"></div>
+        <div class="b-r"></div>
+    </body>
+</HTML>
